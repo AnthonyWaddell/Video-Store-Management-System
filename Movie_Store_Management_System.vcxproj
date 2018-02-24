@@ -142,6 +142,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="afactory.h" />
+    <ClInclude Include="borrow.h" />
+    <ClInclude Include="classical.h" />
+    <ClInclude Include="comedy.h" />
+    <ClInclude Include="customer.h" />
+    <ClInclude Include="dfactory.h" />
+    <ClInclude Include="drama.h" />
+    <ClInclude Include="dvd.h" />
+    <ClInclude Include="hash.h" />
+    <ClInclude Include="history.h" />
+    <ClInclude Include="iaction.h" />
+    <ClInclude Include="iitem.h" />
+    <ClInclude Include="imedia.h" />
+    <ClInclude Include="inventory.h" />
+    <ClInclude Include="iperson.h" />
+    <ClInclude Include="istore.h" />
+    <ClInclude Include="linkedlist.h" />
+    <ClInclude Include="node.h" />
+    <ClInclude Include="originalstore.h" />
+    <ClInclude Include="return.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="customer.cpp" />
+    <ClCompile Include="iperson.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="originalstore.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
