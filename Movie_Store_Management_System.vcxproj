@@ -172,7 +172,9 @@
     <ClCompile Include="iitem.cpp" />
     <ClCompile Include="imedia.cpp" />
     <ClCompile Include="iperson.cpp" />
+    <ClCompile Include="istore.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="node.cpp" />
     <ClCompile Include="originalstore.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
