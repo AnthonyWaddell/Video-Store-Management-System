@@ -167,7 +167,10 @@
     <ClCompile Include="afactory.cpp" />
     <ClCompile Include="customer.cpp" />
     <ClCompile Include="dfactory.cpp" />
+    <ClCompile Include="dvd.cpp" />
     <ClCompile Include="hash.cpp" />
+    <ClCompile Include="iitem.cpp" />
+    <ClCompile Include="imedia.cpp" />
     <ClCompile Include="iperson.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="originalstore.cpp" />

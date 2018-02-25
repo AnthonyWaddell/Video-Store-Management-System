@@ -13,8 +13,8 @@
 #define IMEDIA_
 
 #include "iitem.h"
-
 #include <string>
+using namespace std;
 
 class IMedia : public IItem
 {
@@ -112,7 +112,7 @@ public:
   // Postconditions: None.
   // Return: Returns title of media.
   // --------------------------------------------------------------------------
-  std::string getTitle();
+  string getTitle();
 
   // ---------------------------- getMediaTypeAbbrev --------------------------
   // Gets the abbrevation of the type of media.
@@ -128,7 +128,7 @@ public:
   // Postconditions: This media now has a title.
   // Parameter: title - The title of the media.
   // --------------------------------------------------------------------------
-  void setTitle(std::string title);
+  void setTitle(string title);
 
   // ---------------------------- setYearReleased -----------------------------
   // Sets the year media was released.

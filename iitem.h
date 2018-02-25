@@ -13,6 +13,7 @@
 #define IITEM_
 
 #include <ostream> // For ostream
+using namespace std;
 
 class IItem
 {

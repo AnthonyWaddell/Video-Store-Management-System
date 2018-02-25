@@ -98,5 +98,14 @@
     <ClCompile Include="afactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dvd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="imedia.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

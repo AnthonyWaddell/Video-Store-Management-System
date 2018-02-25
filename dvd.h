@@ -14,8 +14,9 @@
 #define DVD_
 
 #include "imedia.h"
-
+#include <iostream>
 #include <fstream> // For ifstream
+using namespace std;
 
 class DVD : public IMedia
 {
@@ -132,7 +133,7 @@ public:
   // Postconditions: None.
   // Return: Returns the director of the DVD.
   // --------------------------------------------------------------------------
-  std::string getDirector();
+  string getDirector();
 
   // ---------------------------- setDirector ---------------------------------
   // Sets the director of the DVD.
@@ -140,7 +141,7 @@ public:
   // Postconditions: None.
   // Parameter: director - Director of DVD.
   // --------------------------------------------------------------------------
-  void setDirector(std::string director);
+  void setDirector(string director);
 
   // ---------------------------- setDirector ---------------------------------
   // Sets the genre abbrevation of the DVD.
@@ -173,7 +174,7 @@ private:
   // --------------------------------------------------------------------------
   virtual int compareDVD(DVD* dvdPtr) = 0;
 
-  std::string m_director; // The director of the DVD
+  string m_director; // The director of the DVD
   char m_genreAbbrev;     // The genre abbrevation of the DVD
 };
 
