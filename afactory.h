@@ -15,6 +15,11 @@
 #define AFACTORY_
 
 #include "iaction.h"
+#include "borrow.h"
+#include "return.h"
+#include "inventory.h"
+#include "history.h"
+using namespace std;
 
 class AFactory
 {

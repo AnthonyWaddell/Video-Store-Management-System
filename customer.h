@@ -15,8 +15,9 @@
 #include "iperson.h"
 #include "linkedlist.h"
 #include <string.h>;
-
 #include <stack> // For stack
+
+using namespace std;
 
 class Customer : public IPerson
 {
@@ -31,7 +32,7 @@ public:
   // firstName - first name of customer.
   // lastName - last name of customer.
   // --------------------------------------------------------------------------
-  Customer(int id, std::string firstName, std::string lastName);
+  Customer(int id, string firstName, string lastName);
 
   // ---------------------------- ~Customer -----------------------------------
   // Deconstructor that deallocated LinkedList inventory of customer.
@@ -48,7 +49,7 @@ public:
   // Return: Returns a stack containing history from most recent to oldest of
   // borrows and returns.
   // --------------------------------------------------------------------------
-  std::stack<std::string> getDVDHistory();
+  stack<string> getDVDHistory();
 
   // ---------------------------- getInventoryLLPtr ---------------------------
   // Gets the Linked List inventory of customer that is in sorted order.
@@ -60,18 +61,18 @@ public:
   LinkedList* getInventoryLLPtr();
 
   // ---------------------------- setHistory ----------------------------------
-  // Pushs a borrow or return information into m_dvdHistory which is the stack
+  // Pushes a borrow or return information into m_dvdHistory which is the stack
   // of strings that contains customers history.
   // Preconditions: None.
   // Postconditions: m_dvdHistory contains newly added history line that is
   // a borrow or a return with the information.
   // --------------------------------------------------------------------------
-  void setHistory(std::string historyLine);
+  void setHistory(string historyLine);
 
 private:
   int m_id;                             // Unique ID of customer
-  std::stack<std::string> m_dvdHistory; // The history of borrow and returns
-                                        // history from most recent to oldest
+  stack<string> m_dvdHistory;			// The history of borrow and returns
+						                // history from most recent to oldest
   LinkedList* m_inventoryLLPtr;         // Customer's inventory of DVDs
 };
 

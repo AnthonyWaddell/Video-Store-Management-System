@@ -76,7 +76,7 @@ public:
   // --------------------------------------------------------------------------
   Hash* getCustomerHashTablePtr();
 
-private:
+protected: //changed this from private so we can access hashtable & linked list
   // ---------------------------- buildCustomers ------------------------------
   // Pure virtual method for building a store's customers.
   // Preconditions: Valid formatted input file.

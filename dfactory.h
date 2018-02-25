@@ -15,6 +15,9 @@
 #define DFACTORY_
 
 #include "dvd.h"
+#include "comedy.h"
+#include "drama.h"
+#include "classical.h"
 
 class DFactory
 {

@@ -15,6 +15,7 @@
 #define HASH_
 
 #include "iperson.h"
+#include "customer.h"
 
 const int TABLE_SIZE = 2003; // Size of hash table
 

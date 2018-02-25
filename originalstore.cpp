@@ -29,6 +29,7 @@ void OriginalStore::buildCustomers(std::ifstream & inputFileCustomers)
 		{
 			break;
 		}
+
 		int id;
 		string first_name;
 		string last_name;
@@ -36,8 +37,9 @@ void OriginalStore::buildCustomers(std::ifstream & inputFileCustomers)
 		inputFileCustomers >> id;
 		getline(inputFileCustomers, first_name, ' ');
 		getline(inputFileCustomers, last_name, ' ');
-
-		//Customer m_customer = new Customer(id, first_name, last_name);
+		Customer m_customer(id, first_name, last_name);
+		// Hash customer id and put them in hash table
+		
 	}
 }
 

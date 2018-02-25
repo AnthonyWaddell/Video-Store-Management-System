@@ -89,5 +89,14 @@
     <ClCompile Include="iperson.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="afactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
