@@ -24,5 +24,5 @@ Node::Node(IItem * itemPtr)
 Node::Node(IItem * itemPtr, Node * nextNodePtr)
 {
 	m_itemPtr = itemPtr;
-	m_nextNodePtr = NULL;
+	m_nextNodePtr = nextNodePtr;
 }
