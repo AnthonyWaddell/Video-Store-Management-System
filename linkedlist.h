@@ -15,6 +15,7 @@
 #define LINKED_LIST_
 
 #include "node.h"
+using namespace std;
 
 class LinkedList
 {
@@ -58,7 +59,7 @@ public:
   // Postconditions: Out stream contains all contents of Linked List.
   // Parameter: outStream - the out stream for displaying contents.
   // --------------------------------------------------------------------------
-  void displayAll(std::ostream& outStream);
+  void displayAll(ostream& outStream);
 
   // ---------------------------- insertSorted --------------------------------
   // Inserts a new item to the Linked List in sorted order. Also, increases

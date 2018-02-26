@@ -173,6 +173,7 @@
     <ClCompile Include="imedia.cpp" />
     <ClCompile Include="iperson.cpp" />
     <ClCompile Include="istore.cpp" />
+    <ClCompile Include="linkedlist.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="originalstore.cpp" />
