@@ -39,6 +39,7 @@ void OriginalStore::buildCustomers(std::ifstream & inputFileCustomers)
 		getline(inputFileCustomers, last_name, ' ');
 		Customer m_customer(id, first_name, last_name);
 		// Hash customer id and put them in hash table
+		//m_customerHashPtr->insert(m_customer);
 		
 	}
 }

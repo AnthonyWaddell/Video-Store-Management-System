@@ -13,6 +13,7 @@
 #define IPERSON_
 
 #include <string> // For string
+using namespace std;
 
 class IPerson
 {
@@ -25,7 +26,7 @@ public:
   // lastName - last name of IPerson.
   // hashKey - unique hash key identifier of IPerson.
   // --------------------------------------------------------------------------
-  IPerson(std::string firstName, std::string lastName, int hashKey);
+  IPerson(string firstName, string lastName, int hashKey);
 
   // ---------------------------- ~IPerson ------------------------------------
   // An empty virtual destructor for extensibility.
@@ -48,7 +49,7 @@ public:
   // Postconditions: None.
   // Return: Returns first name of IPerson.
   // --------------------------------------------------------------------------
-  std::string getFirstName();
+  string getFirstName();
 
   // ---------------------------- getLastName ---------------------------------
   // Gets IPerson's last name.
@@ -56,11 +57,11 @@ public:
   // Postconditions: None.
   // Return: Returns last name of IPerson.
   // --------------------------------------------------------------------------
-  std::string getLastName();
+  string getLastName();
 
 private:
-  std::string m_firstName; // First name of IPerson
-  std::string m_lastName;  // Last name of IPerson
+  string m_firstName; // First name of IPerson
+  string m_lastName;  // Last name of IPerson
   int m_hashKey;           // Hash key of IPerson
 };
 

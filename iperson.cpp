@@ -1,12 +1,13 @@
 #include "iperson.h"
 
 // --------------------------------------------------------------------------
-// constructor, needs to incorporate hashKey
+// constructor
 // --------------------------------------------------------------------------
-IPerson::IPerson(std::string firstName, std::string lastName, int hashKey)
+IPerson::IPerson(string firstName, string lastName, int hashKey)
 {
 	m_firstName = firstName;
 	m_lastName = lastName;
+	m_hashKey = hashKey;
 
 }
 
@@ -28,15 +29,15 @@ int IPerson::getHashKey()
 // --------------------------------------------------------------------------
 // accessor for m_firstName
 // --------------------------------------------------------------------------
-std::string IPerson::getFirstName()
+string IPerson::getFirstName()
 {
 	return m_firstName;
 }
 
-// accessor for m_lastName
-// destructor
 // --------------------------------------------------------------------------
-std::string IPerson::getLastName()
+// accessor for m_lastName
+// --------------------------------------------------------------------------
+string IPerson::getLastName()
 {
 	return m_lastName;
 }
