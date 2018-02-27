@@ -14,6 +14,7 @@
 #define CLASSICAL_
 
 #include "dvd.h"
+using namespace std;
 
 class Classical : public DVD
 {
@@ -31,7 +32,7 @@ public:
   // Postconditions: outStream contains classical DVD information.
   // Parameter: outStream - A out stream for the display.
   // --------------------------------------------------------------------------
-  virtual void display(std::ostream& outStream);
+  virtual void display(ostream& outStream) const;
 
   // ---------------------------- genDisplay ----------------------------------
   // Generates the display information into a string.

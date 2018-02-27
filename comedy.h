@@ -31,7 +31,7 @@ public:
   // Postconditions: outStream contains comedy DVD information.
   // Parameter: outStream - A out stream for the display.
   // --------------------------------------------------------------------------
-  virtual void display(std::ostream& outStream);
+  virtual void display(std::ostream& outStream) const;
 
   // ---------------------------- genDisplay ----------------------------------
   // Generates the display information into a string.

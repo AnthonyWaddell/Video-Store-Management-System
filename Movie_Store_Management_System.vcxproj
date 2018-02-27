@@ -165,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="afactory.cpp" />
+    <ClCompile Include="classical.cpp" />
     <ClCompile Include="customer.cpp" />
     <ClCompile Include="dfactory.cpp" />
     <ClCompile Include="dvd.cpp" />
