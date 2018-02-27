@@ -32,7 +32,7 @@ public:
   // firstName - first name of customer.
   // lastName - last name of customer.
   // --------------------------------------------------------------------------
-  Customer(int id, string firstName, string lastName);
+  Customer(string firstName, string lastName, int id);
 
   // ---------------------------- ~Customer -----------------------------------
   // Deconstructor that deallocated LinkedList inventory of customer.

@@ -18,6 +18,13 @@ using namespace std;
 class IPerson
 {
 public:
+
+  // ---------------------------- IPerson -------------------------------------
+  // A nasic constructor for an IPerson, taking no parameters
+  // Preconditions: None.
+  // --------------------------------------------------------------------------
+	IPerson();
+
   // ---------------------------- IPerson -------------------------------------
   // A constructor for an IPerson, storing name and hash key.
   // Preconditions: A valid unique hash key.
@@ -59,9 +66,9 @@ public:
   // --------------------------------------------------------------------------
   string getLastName();
 
-private:
-  string m_firstName; // First name of IPerson
-  string m_lastName;  // Last name of IPerson
+protected:				// CHANGED TO PROTECTED SO CUSTOMER CAN ACCESS NAME VARIABLES
+  string m_firstName;	// First name of IPerson
+  string m_lastName;	// Last name of IPerson
   int m_hashKey;           // Hash key of IPerson
 };
 
