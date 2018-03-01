@@ -163,7 +163,7 @@ protected:
   // --------------------------------------------------------------------------
   int compareByGenre(char genre);
 
-private:
+protected:
   // ---------------------------- compareDVD ----------------------------------
   // Compares DVDs by their sorting order.
   // Preconditions: None.
@@ -177,8 +177,5 @@ private:
   string m_director; // The director of the DVD
   char m_genreAbbrev;     // The genre abbrevation of the DVD
 };
-
-// overloaded input and output operator prototypes
-ostream& operator<<(ostream& sout, const DVD &m_dvd);
 
 #endif // !DVD_

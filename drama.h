@@ -32,7 +32,7 @@ public:
   // Postconditions: outStream contains drama DVD information.
   // Parameter: outStream - A out stream for the display.
   // --------------------------------------------------------------------------
-  virtual void display(std::ostream& outStream) const;
+  virtual void display(ostream& outStream) const;
 
   // ---------------------------- genDisplay ----------------------------------
   // Generates the display information into a string.
@@ -41,7 +41,7 @@ public:
   // Parameter: genDisplayString - A string that will contain the drama DVD's
   // information after the method executes.
   // --------------------------------------------------------------------------
-  virtual void genDisplay(std::string& genDisplayString);
+  virtual void genDisplay(string& genDisplayString);
 
   // ---------------------------- displaySearchKey ----------------------------
   // Displays the search key information of the drama DVD.
@@ -105,7 +105,7 @@ public:
   // inputFileInventory - a file that contains the inventory and one line
   // that has a drama DVDs information.
   // --------------------------------------------------------------------------
-  virtual void buildDVD(char genre, std::ifstream& inputFileInventory);
+  virtual void buildDVD(char genre, ifstream& inputFileInventory);
 
   // ---------------------------- operator== ----------------------------------
   // Compares if two drama DVDs are the same.
@@ -136,7 +136,7 @@ private:
   // Return: Returns -1 if director goes ahead, 0 if the same, and 1 if 
   // director goes after.
   // --------------------------------------------------------------------------
-  int compareDirector(std::string director);
+  int compareDirector(string director);
 
   // ---------------------------- compareTitle --------------------------------
   // Compares two titles. In alphabetical order.
@@ -146,7 +146,7 @@ private:
   // Return: Returns -1 if title goes ahead, 0 if the same, and 1 if 
   // title goes after.
   // --------------------------------------------------------------------------
-  int compareTitle(std::string title);
+  int compareTitle(string title);
 };
 
 #endif // !DRAMA_

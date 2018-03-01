@@ -106,7 +106,7 @@ public:
   // inputFileInventory - a file that contains the inventory and one line
   // that has a classical DVDs information.
   // --------------------------------------------------------------------------
-  virtual void buildDVD(char genre, std::ifstream& inputFileInventory);
+  virtual void buildDVD(char genre, ifstream& inputFileInventory);
 
   // ---------------------------- operator== ----------------------------------
   // Compares if two classical DVDs are the same. Regardless if major actor
@@ -132,7 +132,7 @@ public:
   // Postconditions: None.
   // Return: Returns major actor first name of classical DVD.
   // --------------------------------------------------------------------------
-  std::string getMajorActorFirstName();
+  string getMajorActorFirstName();
 
   // ---------------------------- getMajorActorLastName ----------------------
   // Gets the major actor last name.
@@ -140,7 +140,7 @@ public:
   // Postconditions: None.
   // Return: Returns major actor last name of classical DVD.
   // --------------------------------------------------------------------------
-  std::string getMajorActorLastName();
+  string getMajorActorLastName();
 
   // ---------------------------- setMonthReleased ----------------------------
   // Sets the month released of the classical DVD.
@@ -156,7 +156,7 @@ public:
   // Postconditions: None.
   // Parameter: firstName - First name of major actor of the classical DVD.
   // --------------------------------------------------------------------------
-  void setMajorActorFirstName(std::string firstName);
+  void setMajorActorFirstName(string firstName);
 
   // ---------------------------- setMajorActorLastName -----------------------
   // Sets the major actors last name of the classical DVD.
@@ -164,7 +164,7 @@ public:
   // Postconditions: None.
   // Parameter: lastName - Last name of major actor of the classical DVD.
   // --------------------------------------------------------------------------
-  void setMajorActorLastName(std::string lastName);
+  void setMajorActorLastName(string lastName);
 
 private:
   // ---------------------------- compareDVD ----------------------------------
@@ -201,11 +201,11 @@ private:
   // Return: Returns -1 if parameter name goes ahead, returns 0 if the same,
   // returns 1 if parameter name goes after.
   // --------------------------------------------------------------------------
-  int compareMajorActor(std::string firstName, std::string lastName);
+  int compareMajorActor(string firstName, string lastName);
 
   int m_monthReleased;               // Month classical dvd was released
-  std::string m_majorActorFirstName; // Major actor's first name
-  std::string m_majorActorLastName;  // Major actor's last name
+  string m_majorActorFirstName; // Major actor's first name
+  string m_majorActorLastName;  // Major actor's last name
 };
 
 #endif // !CLASSICAL_

@@ -14,6 +14,7 @@
 #define COMEDY_
 
 #include "dvd.h"
+using namespace std;
 
 class Comedy : public DVD
 {
@@ -31,7 +32,7 @@ public:
   // Postconditions: outStream contains comedy DVD information.
   // Parameter: outStream - A out stream for the display.
   // --------------------------------------------------------------------------
-  virtual void display(std::ostream& outStream) const;
+  virtual void display(ostream& outStream) const;
 
   // ---------------------------- genDisplay ----------------------------------
   // Generates the display information into a string.
@@ -40,7 +41,7 @@ public:
   // Parameter: genDisplayString - A string that will contain the comedy DVD's
   // information after the method executes.
   // --------------------------------------------------------------------------
-  virtual void genDisplay(std::string& genDisplayString);
+  virtual void genDisplay(string& genDisplayString);
 
   // ---------------------------- displaySearchKey ----------------------------
   // Displays the search key information of the comedy DVD.
@@ -135,7 +136,7 @@ private:
   // Return: Returns -1 if title goes ahead, 0 if the same, and 1 if 
   // title goes after.
   // --------------------------------------------------------------------------
-  int compareTitle(std::string title);
+  int compareTitle(string title);
 
   // ---------------------------- compareYearReleased -------------------------
   // Compares two years released. In ascending order.

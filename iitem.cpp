@@ -34,3 +34,9 @@ int IItem::getStock()
 {
 	return m_stock;
 }
+
+ostream & operator<<(ostream & sout, const IItem & i_item)
+{
+	i_item.display(sout);
+	return sout;
+}

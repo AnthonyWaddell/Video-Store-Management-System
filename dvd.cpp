@@ -86,11 +86,3 @@ int DVD::compareByGenre(char genre)
 	return return_value;
 }
 
-// --------------------------------------------------------------------------
-// Overloaded output operator
-// --------------------------------------------------------------------------
-ostream & operator<<(ostream & sout, const DVD & m_dvd)
-{
-	m_dvd.display(sout);
-	return sout;
-}

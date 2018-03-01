@@ -31,7 +31,7 @@ public:
   // Postconditions: outStream contains item information.
   // Parameter: outStream - A out stream for the display.
   // --------------------------------------------------------------------------
-  virtual void display(std::ostream& outStream) = 0;
+  virtual void display(ostream& outStream) const = 0;
 
   // ---------------------------- genDisplay ----------------------------------
   // Generates the display information into a string.
@@ -122,10 +122,12 @@ public:
   // --------------------------------------------------------------------------
   int getStock();
 
-private:
+protected:
   int m_stock; // The amount of the item
 };
 
+// overloaded input and output operator prototypes
+ostream& operator<<(ostream& sout, const IItem &i_item);
 
 #endif // !IITEM_
 

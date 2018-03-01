@@ -60,3 +60,4 @@ void IMedia::setMediaTypeAbbrev(char mediaTypeAbbrev)
 	// Not sure if we are error checking this or not for anything besides 'D'
 	m_mediaTypeAbbrev = mediaTypeAbbrev;
 }
+

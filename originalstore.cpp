@@ -37,7 +37,6 @@ void OriginalStore::buildCustomers(std::ifstream & inputFileCustomers)
 		inputFileCustomers >> id;
 		getline(inputFileCustomers, first_name, ' ');
 		getline(inputFileCustomers, last_name, ' ');
-		Customer m_customer(id, first_name, last_name);
 		// Hash customer id and put them in hash table
 		//m_customerHashPtr->insert(m_customer);
 		
@@ -70,6 +69,7 @@ void OriginalStore::buildInventory(std::ifstream & inputFileInventory)
 		}
 		else
 		{
+			dvd_ptr->buildDVD(genre, inputFileInventory);
 			// getline a bunch of stuff into dvd_ptr for all the valid data in the current string
 			// add dvd_ptr to linked list
 		}

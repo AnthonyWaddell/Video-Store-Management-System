@@ -5,9 +5,10 @@
 // --------------------------------------------------------------------------
 Customer::Customer(string firstName, string lastName, int id)
 {
-	m_firstName = firstName;
+	IPerson *new_customer = new IPerson(firstName, lastName, id);
+	/*m_firstName = firstName;
 	m_lastName = lastName;
-	m_id = id;
+	m_id = id;*/
 }
 
 // --------------------------------------------------------------------------
@@ -21,6 +22,9 @@ Customer::~Customer()
 	}
 }
 
+// --------------------------------------------------------------------------
+// accessor for m_dvdHistory
+// --------------------------------------------------------------------------
 stack<string> Customer::getDVDHistory()
 {
 	return m_dvdHistory;
